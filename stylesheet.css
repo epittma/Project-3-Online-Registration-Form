@@ -1,0 +1,208 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color:#2D3945;
+  letter-spacing: 1.05px;
+}
+
+/* Main Styles */
+
+header {
+  background-color: #2D3945;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+h2,
+h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color:#2D3945;
+}
+
+main,
+header,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  margin: 0;
+}
+
+input,
+textarea {
+  background-color: #eaeaea;
+  border: none;
+}
+
+input[placeholder="required"] {
+  text-align: right;
+  /*padding-right: 10px !important;*/
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 15px;
+  height: 90px;
+}
+
+select {
+  background-color: #eaeaea;
+  padding: 6px;
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+}
+
+fieldset {
+  margin-bottom: 0px;
+  border: none;
+  padding: 0;
+}
+
+button {
+  padding: 19px 0 18px;
+  color: #FFF;
+  background-color:#2D3945;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* Class & ID Styles */
+
+.contact input,
+.contact select {
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 1s;
+}
+
+.contact input {
+  width: 93%;
+}
+
+.contact select {
+  width: 100%;
+}
+
+.contact label {
+  width: 100%;
+}
+
+#zip {
+  width: 40%;
+}
+
+.newsletter {
+  margin-top: 30px;
+  padding: 20px 0 30px;
+  text-align: center;
+  border-bottom: 2px solid #2D3945;
+  color:#2D3945;
+}
+
+.newsletter p {
+  font-size: 1.2em;
+  color:darkgrey;
+}
+
+.contact {
+  margin-top: 5px;
+  border-top: 1.5px solid #2D3945;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-top: 1.5px solid #2D3945;
+}
+
+.news textarea {
+  transition: all 1s;
+}
+
+/* Psuedo & Focus Styles*/
+
+.contact input:hover,
+.contact select:hover,
+.news textarea:hover {
+  background-color: #2D3945;
+}
+
+.contact input:focus,
+.contact select:focus,
+.news textarea:focus {
+  background-color: #0D3E5C;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0D3E5C;
+  /*font-size: 1.8em;*/
+  /*padding: 10px 0;*/
+  transition: all .8s;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 768px) {
+  main,
+  footer {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact input {
+    width: 70%;
+  }
+
+  .contact select {
+    width: 73%;
+  }
+
+  .contact label {
+    width: 25%;
+    align-self: center;
+  }
+
+  #zip {
+    width: 30%;
+  }
+
+}
